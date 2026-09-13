@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import logo from "../assets/logo-text.png"
+import { RxHamburgerMenu } from "react-icons/rx";
+
 
 const Nav = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -11,6 +13,8 @@ const Nav = () => {
                 <div className="flex items-center justify-between h-20">
                     <button onClick={() => setMenuOpen(!menuOpen)}
                         className='md:hidden text-2xl'>
+  
+  <RxHamburgerMenu />
 
                     </button>
                     <a href='#' className="flex items-center">
@@ -35,7 +39,7 @@ const Nav = () => {
                     </div>
                     <div className="flex items-center gap-2">
                         <button className="btn btn-ghost btn-sm">Sign In</button>
-                        <button className="btn btn-sm rounded-full bg-pink-500 hover:bg-pink-600 text-white bordere-none">Sign Up</button>
+                        <button className="btn btn-sm rounded-full bg-pink-500 hover:bg-pink-600 text-white border-none">Sign Up</button>
 
                     </div>
 
