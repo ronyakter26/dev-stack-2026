@@ -1,14 +1,15 @@
 
-import Nav from "./components/nav"
-import Banner from "./components/banner"
-function App() {
+import Nav from "./components/Nav";
+import Banner from "./components/Banner";
+import TechnologySection from "./components/TechnologySection";
 
-  return (
+function App(){
+  return(
     <>
-      <Nav/>
-          <Banner/> 
-              
-    </>
+    <Nav /> 
+    <Banner />
+    <TechnologySection />
+</>
   )
 }
 
