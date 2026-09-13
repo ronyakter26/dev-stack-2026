@@ -1,75 +1,45 @@
-# React + TypeScript + Vite
+# 🚀 Dev Stack
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Dev Stack is a modern and responsive web application that helps developers explore different technologies and build their ideal development stack. Users can browse technologies by category, view useful information, and add their favorite technologies to their personal stack.
 
-Currently, two official plugins are available:
+🔗 *Live Website:* https://dev-stack-2026.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- 🧩 *Explore Technologies*  
+  Browse frontend, backend, database, styling, language, DevOps, and other development technologies.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 📚 *Technology Details*  
+  Each technology card shows its name, category, description, difficulty level, rating, and badge.
 
-## Expanding the ESLint configuration
+- 🛠️ *Build Your Stack*  
+  Add technologies to your personal stack and remove them whenever you want. Toast notifications are also shown when technologies are added or when a duplicate is selected.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Technologies Used
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- ⚛️ React.js
+- 🎨 Tailwind CSS
+- 🌼 DaisyUI
+- 📘 TypeScript / JavaScript (ES6+)
+- 🔔 React-Toastify
+- 📄 JSON
+- ⚡ Vite
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📂 Project Structure
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```text
+src/
+├── assets/
+├── components/
+│   ├── Banner.tsx
+│   ├── Nav.tsx
+│   ├── TechnologyCard.tsx
+│   ├── TechnologySection.tsx
+│   ├── StackSidebar.tsx
+│   └── MainFooter.tsx
+├── data/
+│   └── technologies.json
+├── App.tsx
+├── main.tsx
+└── index.css
 
-```
-
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
