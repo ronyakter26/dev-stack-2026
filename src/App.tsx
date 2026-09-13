@@ -2,6 +2,7 @@
 import Nav from "./components/Nav";
 import Banner from "./components/Banner";
 import TechnologySection from "./components/TechnologySection";
+import Footer from "./components/Footer";
 
 function App(){
   return(
@@ -9,6 +10,7 @@ function App(){
     <Nav /> 
     <Banner />
     <TechnologySection />
+  <Footer />
 </>
   )
 }

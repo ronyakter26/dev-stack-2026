@@ -49,13 +49,13 @@ const TechnologySection = () => {
     const alreadyExists = stack.some((item) => item.id === technology.id);
 
     if (alreadyExists) {
-      toast.warning(${technology.name} is already in your stack!);
+      toast.warning(`${technology.name} is already in your stack!`);
       return;
     }
 
     setStack((previousStack) => [...previousStack, technology]);
 
-    toast.success(${technology.name} added to your stack!);
+    toast.success(`${technology.name} added to your stack!`);
   };
 
   // Remove one technology
