@@ -168,17 +168,5 @@ I used it to show an empty stack message when there are no technologies in the s
 ### 7. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
 
 A parent sends data to a child using props. A child can send information back by calling a function passed to it through props.
-```
 
-### এখন Requirements-এর সাথে মিলিয়ে দেখো
 
-- ✅ Overview
-- 🟡 Screenshot — optional, তাই না দিলেও হবে
-- ✅ Main technologies
-- ✅ Main features
-- ✅ Dependencies
-- ✅ Local run guideline
-- ✅ Live link
-- ✅ GitHub repository link
-- ✅ Project structure
-- ✅ React Q&A
